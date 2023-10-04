@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 <body>
     <nav>
@@ -19,5 +20,46 @@
             </div>
         </div>
     </nav>
+    <div class="wrapper">
+        <!-- Bagian Client -->
+        <section id="clients">
+            <div class="tengah">
+                <div class="kolom">
+                    <p class="deskripsi">Our Top Clients</p>
+                    <h2>Clients</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quo quis fugiat pariatur reprehenderit, accusamus nostrum molestiae aperiam ullam quam ducimus vero dolorum reiciendis consectetur exercitationem atque, corrupti commodi quasi alias aspernatur neque obcaecati enim omnis voluptas? Deserunt tenetur qui praesentium, cum temporibus aliquam? Voluptates, autem aspernatur exercitationem placeat itaque facilis ex. Quod natus aliquam a modi, sapiente illum fuga vero iure minus harum aspernatur at cumque minima sunt dolores dignissimos eos saepe consequatur ullam. Quidem deserunt debitis ducimus obcaecati laborum reprehenderit molestias aperiam laudantium consectetur consequatur, ad voluptatum quam fuga, tenetur qui possimus et eum ratione officiis eveniet voluptas?</p>
+                </div>
+                <div class="clients-container swiper-container">
+                    <div class="swiper-wrapper">
+                        <!-- Daftar Client -->
+                        <div class="swiper-slide"><img src="https://img.freepik.com/free-vector/logo-template-background_1390-55.jpg?size=626&ext=jpg" alt="Partner 1"></div>
+                        <div class="swiper-slide"><img src="https://img.freepik.com/free-vector/abstract-logo-flame-shape_1043-44.jpg?size=626&ext=jpg" alt="Partner 2"></div>
+                        <div class="swiper-slide"><img src="https://image.freepik.com/free-vector/campus-collage-university-education-logo-design-template_7492-62.jpg" alt="Partner 3"></div>
+                        <div class="swiper-slide"><img src="https://img.freepik.com/free-vector/orange-logo-arrow-shape_1043-53.jpg?size=626&ext=jpg" alt="Partner 4"></div>
+                        <div class="swiper-slide"><img src="https://img.freepik.com/free-vector/abstract-orange-triangle-logo_1043-120.jpg?size=626&ext=jpg" alt="Partner 5"></div>
+                        <div class="swiper-slide"><img src="https://img.freepik.com/free-vector/abstract-logo-made-with-rounded-squares_1043-52.jpg?size=626&ext=jpg" alt="Partner 5"></div>
+                        <div class="swiper-slide"><img src="https://img.freepik.com/premium-vector/meatball-bakso-indonesian-food-with-noodle-vegetable-cartoon-illustration-logo_8169-517.jpg?size=626&ext=jpg" alt="Partner 5"></div>
+                        <div class="swiper-slide"><img src="https://img.freepik.com/free-vector/bicycle-shop-logo-design-vector_53876-40626.jpg?size=626&ext=jpg" alt="Partner 5"></div>
+                        <div class="swiper-slide"><img src="https://img.freepik.com/premium-vector/supermarket-logo-concept_23-2148458359.jpg?size=626&ext=jpg" alt="Partner 5"></div>
+                        <div class="swiper-slide"><img src="https://img.freepik.com/free-vector/gamer-logo-with-tagline_1043-109.jpg?size=626&ext=jpg" alt="Partner 5"></div>
+                        <div class="swiper-slide"><img src="https://img.freepik.com/premium-vector/vector-logo-design-inspired-by-motorcycles-incorporating-skull-motorcycle-elements_969863-1647.jpg?size=626&ext=jpg" alt="Partner 5"></div>
+                        <div class="swiper-slide"><img src="https://img.freepik.com/free-vector/cute-mummy-gaming-cartoon-illustration-halloween-gaming-icon-concept_138676-1889.jpg?size=626&ext=jpg" alt="Partner 5"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 'auto',
+            spaceBetween: 20,
+            loop: true,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
 </body>
 </html>
