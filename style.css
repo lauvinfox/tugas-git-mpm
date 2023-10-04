@@ -64,12 +64,12 @@
 .swiper-wrapper {
     display: flex;
     justify-content: flex-start;
-    animation: scroll 20s linear infinite; /* Animasi pergerakan dari kanan ke kiri */
+    animation: scroll 20s linear infinite;
 }
 
 .swiper-slide {
     flex: auto;
-    width: 200px; /* Sesuaikan dengan ukuran partner Anda */
+    width: 200px; 
     margin-right: 20px;
 }
 
@@ -77,6 +77,7 @@
 .swiper-slide img {
     max-width: 100%;
     height: auto;
+    border-radius: 50%;
 }
 
 @keyframes scroll {
@@ -86,4 +87,28 @@
     100% {
         transform: translateX(-100%);
     }
+}
+
+#contact {
+    background: #dedede;
+    padding:50px 0px 50px 0px;
+}
+
+.footer {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.footer-section {
+    width: 20%;
+    margin: 0 auto;
+}
+
+.link-discord img {
+    width: 20px;
+    margin: 0 auto;
+    border-radius: 50%;
 }
