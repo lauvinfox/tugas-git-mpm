@@ -36,3 +36,54 @@
 .nav-links a:hover {
     color: #ff6600; 
 }
+
+.kolom {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.kolom .deskripsi {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Montserrat';
+    color: #364f6b;
+}
+
+.tengah {
+    text-align: center;
+    width: 100%;
+}
+
+/* Style untuk daftar partner */
+
+.clients-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.swiper-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    animation: scroll 20s linear infinite; /* Animasi pergerakan dari kanan ke kiri */
+}
+
+.swiper-slide {
+    flex: auto;
+    width: 200px; /* Sesuaikan dengan ukuran partner Anda */
+    margin-right: 20px;
+}
+
+
+.swiper-slide img {
+    max-width: 100%;
+    height: auto;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
